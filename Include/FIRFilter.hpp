@@ -7,6 +7,10 @@ protected:
     std::vector<double> coefficients;
 
 public:
+    FIRFilter() = default;
+
+    virtual ~FIRFilter() = default;
+    
     explicit FIRFilter(const std::vector<double>& coeffs);
 
     std::vector<double> apply(

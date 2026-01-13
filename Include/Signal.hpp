@@ -12,4 +12,9 @@ public:
 
     const std::vector<double>& getSamples() const;
     void setSamples(const std::vector<double>& newSamples);
+
+    Signal()= default;
+    
+    ~Signal()= default;
+    
 };

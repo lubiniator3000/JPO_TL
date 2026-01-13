@@ -4,5 +4,10 @@
 
 class HighPassFilter : public FIRFilter {
 public:
+
+    HighPassFilter()=default;
+    
+    ~HighPassFilter() override=default;
+
     HighPassFilter(double cutoff, int order);
 };
