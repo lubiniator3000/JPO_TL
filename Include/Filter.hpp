@@ -1,6 +1,9 @@
 #pragma once
 #include <vector>
 
+namespace tl {
+
+
 class Filter {
 public:
 
@@ -12,3 +15,5 @@ public:
         const std::vector<double>& input
     ) const = 0;
 };
+
+}

@@ -1,6 +1,8 @@
 #include "FIRDesign.hpp"
 #include <cmath>
 
+using namespace tl;
+
 #define M_PI 3.14159265358979323846
 
 std::vector<double> firLowPass(
@@ -26,7 +28,7 @@ std::vector<double> firHighPass(
     double cutoff,
     int order
 ) {
-    auto lp = firLowPass(cutoff, order);
+    auto lp = tl::firLowPass(cutoff, order);
     std::vector<double> hp(order + 1);
 
     int M = order;
@@ -45,8 +47,8 @@ std::vector<double> firBandPass(
     double fHigh,
     int order
 ) {
-    auto lpHigh = firLowPass(fHigh, order);
-    auto lpLow  = firLowPass(fLow, order);
+    auto lpHigh = tl::firLowPass(fHigh, order);
+    auto lpLow  = tl::firLowPass(fLow, order);
 
     std::vector<double> bp(order + 1);
 

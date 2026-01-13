@@ -1,6 +1,8 @@
 #include "Signal.hpp"
 #include <fstream>
 
+using namespace tl;
+
 bool Signal::loadFromFile(const std::string& filename) {
     std::ifstream file(filename);
     if (!file) return false;

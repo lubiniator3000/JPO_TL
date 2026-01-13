@@ -2,6 +2,9 @@
 #include <vector>
 #include <string>
 
+namespace tl {
+
+
 class Signal {
 private:
     std::vector<double> samples;
@@ -14,7 +17,9 @@ public:
     void setSamples(const std::vector<double>& newSamples);
 
     Signal()= default;
-    
+
     ~Signal()= default;
     
 };
+
+}

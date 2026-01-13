@@ -2,6 +2,9 @@
 #include "FIRFilter.hpp"
 #include "FIRDesign.hpp"
 
+namespace tl {
+
+
 class BandPassFilter : public FIRFilter {
 public:
     BandPassFilter()=default;
@@ -10,3 +13,5 @@ public:
 
     BandPassFilter(double fLow, double fHigh, int order);
 };
+
+}

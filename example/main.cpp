@@ -3,6 +3,8 @@
 #include "HighPassFilter.hpp"
 #include "BandPassFilter.hpp"
 
+using namespace tl;
+
 int main() {
     Signal signal;
     signal.loadFromFile("input.txt");
