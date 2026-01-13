@@ -1,5 +1,7 @@
 #include "FIRFilter.hpp"
 
+using namespace tl;
+
 FIRFilter::FIRFilter(const std::vector<double>& coeffs)
     : coefficients(coeffs) {}
 

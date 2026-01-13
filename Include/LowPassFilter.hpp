@@ -2,6 +2,9 @@
 #include "FIRFilter.hpp"
 #include "FIRDesign.hpp"
 
+namespace tl {
+
+
 class LowPassFilter : public FIRFilter {
 public:
     LowPassFilter()=default;
@@ -10,3 +13,5 @@ public:
 
     LowPassFilter(double cutoff, int order);
 };
+
+}
